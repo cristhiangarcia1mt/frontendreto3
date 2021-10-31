@@ -1,6 +1,6 @@
 function traerInformacionEspecialidad(){
     $.ajax({
-        url:"http://129.151.121.127/api/Specialty/all",
+        url:"http://129.151.121.127:8080/api/Specialty/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -35,7 +35,7 @@ function guardarInformacionEspecialidad(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://129.151.121.127/api/Specialty/save",
+        url:"http://129.151.121.127:8080/api/Specialty/save",
        
         
         success:function(response) {
@@ -59,7 +59,7 @@ function guardarInformacionEspecialidad(){
 
 function traerInformacionDoctor(){
     $.ajax({
-        url:"http://129.151.121.127/api/Doctor/all",
+        url:"http://129.151.121.127:8080/api/Doctor/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -98,7 +98,7 @@ function guardarInformacionDoctor(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://129.151.121.127/api/Doctor/save",
+        url:"http://129.151.121.127:8080/api/Doctor/save",
        
         
         success:function(response) {
@@ -121,7 +121,7 @@ function guardarInformacionDoctor(){
 
 function traerInformacionClientes(){
     $.ajax({
-        url:"http://129.151.121.127/api/Client/all",
+        url:"http://129.151.121.127:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -160,7 +160,7 @@ function guardarInformacionClientes(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://129.151.121.127/api/Client/save",
+        url:"http://129.151.121.127:8080/api/Client/save",
        
         
         success:function(response) {
@@ -183,7 +183,7 @@ function guardarInformacionClientes(){
 }
 function traerInformacionMensajes(){
     $.ajax({
-        url:"http://129.151.121.127/api/Message/all",
+        url:"http://129.151.121.127:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -217,7 +217,7 @@ function guardarInformacionMensajes(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://129.151.121.127/api/Message/save",
+        url:"http://129.151.121.127:8080/api/Message/save",
        
         
         success:function(response) {
@@ -238,7 +238,7 @@ function guardarInformacionMensajes(){
     }
     function traerInformacionReservaciones(){
         $.ajax({
-            url:"http://129.151.121.127/api/Reservation/all",
+            url:"http://129.151.121.127:8080/api/Reservation/all",
             type:"GET",
             datatype:"JSON",
             success:function(respuesta){
@@ -274,7 +274,7 @@ function guardarInformacionMensajes(){
             dataType: 'JSON',
             data: JSON.stringify(var4),
             
-            url:"http://129.151.121.127/api/Reservation/save",
+            url:"http://129.151.121.127:8080/api/Reservation/save",
            
             
             success:function(response) {
